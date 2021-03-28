@@ -1,0 +1,241 @@
+/* * Prefixed by https://autoprefixer.github.io, PostCSS: v7.0.29, Autoprefixer: v9.7.6, Browsers: last 4 version */
+
+* {
+    padding: 0;
+    margin: 0;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9A9A9A;
+    color: #BFBFBF;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+    --main-color: #7BAA47;
+    --secondary-color: #3F3F3F;
+}
+
+#container {
+    width: 95vw;
+    margin: 0 auto;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    position: fixed;
+    z-index: 100;
+    bottom: 50px;
+    right: 50px;
+    visibility: hidden;
+
+    font-size: 2.5rem;
+    color: #BFBFBF;
+
+    background-color: #5F5F5F;
+    border-radius: 50%;
+    border: 5px solid var(--main-color, lightgreen);
+    padding: 1rem;
+
+    -webkit-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+#arrow:hover {
+    cursor: pointer;
+
+    background-color: #3D3D3D;
+    -webkit-box-shadow: 0px 0px 20px 5px #3F3F3F;
+    box-shadow: 0px 0px 20px 5px #3F3F3F;
+}
+
+/* * Header */
+
+#header {
+    font-family: 'Grand Hotel', cursive;
+    color: var(--main-color, lightgreen);
+    letter-spacing: 2px;
+    text-align: center;
+
+    background-color: #3F3F3F;
+    border-radius: 10px;
+    border: 5px solid var(--main-color, lightgreen);
+
+    margin-bottom: 15px;
+
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 95vw;
+}
+
+#page-header {
+    font-size: 3rem;
+
+    padding: 1.5rem 0;
+}
+
+/* * Menu */
+
+#menu {
+    background-color: #5F5F5F;
+    border-radius: 10px;
+    border: 5px solid #9A9A9A;
+
+    margin-bottom: 15px;
+    padding: 5px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.menu-option {
+    background-color: var(--main-color, lightgreen);
+    border-radius: 20px;
+    width: 180px;
+    height: auto;
+
+    font-family: 'Grand Hotel', cursive;
+    color: var(--secondary-color, darkgrey);
+    font-size: 1.75rem;
+
+    margin: 15px;
+    padding: 20px 0px;
+
+    list-style-type: none;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+.menu-option:hover {
+    background-color: #598825;
+    -webkit-box-shadow: 0px 0px 20px 5px #3F3F3F;
+    box-shadow: 0px 0px 20px 5px #3F3F3F;
+
+    cursor: pointer;
+}
+
+/* * Slides */
+
+.slide {
+    height: auto;
+    background-color: var(--secondary-color, darkgrey);
+    border-radius: 10px;
+    border: 5px solid var(--main-color, lightgreen);
+
+    padding: 20px;
+    margin-bottom: 15px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.slide-header {
+    font-family: 'Grand Hotel', cursive;
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+.slide-content {
+    font-size: 1.25rem;
+
+    margin: 0 5vw;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.slide-description {
+    line-height: 200%;
+
+    margin: 0 2.5vw;
+}
+
+.slide-icon {
+    font-size: 6rem;
+    color: var(--main-color, lightgreen);
+
+    -webkit-transition: .5s all ease-out;
+    -o-transition: .5s all ease-out;
+    transition: .5s all ease-out;
+}
+
+.slide-icon:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+
+    color: #DB512C;
+}
+
+/* * Footer */
+
+#footer {
+    text-align: center;
+
+    background-color: #3F3F3F;
+    border-radius: 10px;
+    border: 5px solid var(--main-color, lightgreen);
+
+    margin-bottom: 15px;
+    padding: 1.5rem 0;
+
+    font-size: 1.25rem;
+}

@@ -1,0 +1,50 @@
+/* * Prefixed by https://autoprefixer.github.io, PostCSS: v7.0.29, Autoprefixer: v9.7.6, Browsers: last 4 version */
+
+@media (max-width: 800px) {
+    #page-header {
+        font-size: 2.25rem;
+    }
+
+    #arrow {
+        font-size: 1.5rem;
+
+        bottom: 25px;
+        right: 25px;
+    }
+}
+
+@media (max-width: 620px) {
+    #header {
+        margin-bottom: 30px
+    }
+
+    .slide-header {
+        font-size: 2.25rem;
+        text-align: center;
+    }
+
+    .slide-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .slide-description {
+        margin-bottom: 15px;
+    }
+
+    .slide-icon {
+        font-size: 4rem;
+    }
+
+    #footer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+	#page-header {
+		font-size: 1.5rem;
+	}
+}
